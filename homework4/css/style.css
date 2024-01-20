@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    margin: 5px;
+    background: #eae8f3;
+border-radius: 20px 0 0 20px;
+border: 3px solid #5e51954c;
+height: 450px;
+overflow: auto;
+}
+
+.block2 {
+    background: #bfa886;
+display: inline-block;
+width: 250px;
+height: 175px;
+margin: 7px 10px;
+padding: 0 0 0 25px;
+border-radius: 15px;
+box-shadow: 1px 1px 3px #000;
+
+}
