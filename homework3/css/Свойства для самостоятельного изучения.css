@@ -1,0 +1,54 @@
+.example {
+    /* 
+        Добавляет линию к тексту элемента. В значении указывается стиль линии.
+     */
+    text-decoration: dashed;
+    text-decoration: dotted;
+    text-decoration: double;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: wavy;
+    text-decoration: solid;
+    text-decoration: none;
+
+    /* 
+        Добавляет тень для текста.
+        Первое значение - смещение тени по оси X
+        Второе значение - смещение тени по оси Y
+        Третье значение - размытие тени
+        Четвёртое значение - цвет тени
+     */
+    text-shadow: 0 0 0 #000;
+    text-shadow: none;
+
+    /* 
+        Меняет регистр текста элемента.
+     */
+    text-transform: capitalize; /* Все Первые Буквы Текста Элемента Станут Заглавными */
+    text-transform: lowercase; /* все буквы текста элемента будут в нижнем регистре */
+    text-transform: uppercase; /* ВСЕ БУКВЫ ТЕКСТА ЭЛЕМЕНТА СТАНУТ ЗАГЛАВНЫМИ */
+    text-transform: none;
+
+    /* 
+        Добавляет красную строку для текста элемента.
+     */
+    text-indent: 40px;
+
+    /* 
+        Регулирует отступ между БУКВАМИ текста элемента.
+     */
+    letter-spacing: 2px;
+
+    /* 
+        Регулирует отступ между СЛОВАМИ текста элемента.
+     */
+    word-spacing: 10px;
+
+    /* 
+        Лично я в этом свойстве использую только nowrap.
+        Значение запрещает перенос текста на следующую строку.
+     */
+    white-space: nowrap;
+    white-space: normal;
+}

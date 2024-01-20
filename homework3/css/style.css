@@ -1,0 +1,26 @@
+.opsans {
+font-family: "Open Sans", sans-serif;
+font-size: 20px;
+line-height: 30px;
+font-weight: 600;
+font-style: italic;
+text-align: justify;
+}
+.lorem1 {
+text-decoration: line-through ;
+}
+.lorem2 {
+    text-transform: uppercase;
+text-indent: 40px;
+text-align: center;
+}
+.lorem3 {
+    color: purple;
+    word-spacing: 30px;
+    text-decoration: overline;
+}
+.lorem5 {
+    color: rgb(1, 82, 104);
+    letter-spacing: 5px;
+    text-decoration: double ;
+}
