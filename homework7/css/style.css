@@ -1,0 +1,41 @@
+body {
+    background-color: #453e3e;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.block2 {
+    height: 100%;
+}
+
+.dynamicblock {
+    position: fixed;
+    width: 100%;
+}
+
+.rectangle {
+    background: #fff;
+    width: 800px;
+    min-height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+
+
+
+
+    border-radius: 5px;
+}
+
+.circle {
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60%;
+    left: 13%;
+
+}
