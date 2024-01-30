@@ -1,0 +1,52 @@
+body {
+    background: #322f2f;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 55px auto 0px auto;
+}
+
+
+.textblock {
+    text-align: center;
+}
+
+
+.text {
+    color: #fff;
+    position: relative;
+}
+
+.text::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50% 50%;
+    position: absolute;
+    left: 250px;
+    transform: translate(-20px, -25px);
+}
+
+.text::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #4c00ff;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50% 50%;
+    position: absolute;
+    right: 250px;
+    top: 0px;
+    bottom: 25px;
+
+    transform: translate(20px, -25px);
+}
