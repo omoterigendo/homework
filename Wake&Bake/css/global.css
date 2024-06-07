@@ -1,0 +1,201 @@
+:root {
+  --general-text: #312C27;
+  --accent-text: #1F1711;
+  --general-bg: #FFF9F4;
+  --accent-bg: #FFE0CB;
+  --accent-color: #FFA55C;
+  --transition: all .4s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.5;
+  color: var(--general-text);
+  background: var(--general-bg);
+}
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main__about {
+  padding: 140px 0;
+}
+
+.main__program, 
+.main__gallery,
+.main__feedback {
+  padding-bottom: 140px;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Gabriola';
+  font-size: 74px;
+  line-height: 0.82;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 3px 15px;
+  height: 62px;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: #FF9138;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  backdrop-filter: brightness(60%);
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+}
+
+.modal--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__window {
+  position: relative;
+  background: var(--general-bg);
+  border-radius: 20px;
+  padding: 0 60px 60px;
+  max-width: 428px;
+
+}
+
+.modal__img {
+  margin-top: -65px;
+  margin-left: 13px;
+  margin-bottom: 15px;
+}
+
+.modal__img img {}
+
+.modal__cancel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+  stroke: #ac907a;
+}
+
+.modal__cancel path,
+.modal__cancel rect {
+  transition: var(--transition);
+
+}
+
+.modal__heading {
+  margin-bottom: 30px;
+}
+
+.modal__title {
+  color: var(--accent-text);
+  font-family: Gabriola;
+  font-size: 42px;
+  line-height: 0.9;
+  margin-bottom: 10px;
+}
+
+
+.field {
+  position: relative;
+}
+
+.field span {
+  position: absolute;
+  color: #AC907A;
+  font-size: 11px;
+  top: 12px;
+  left: 28px;
+  transition: var(--transition);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.field__input {
+  width: 100%;
+  display: block;
+  background: transparent;
+  padding: 19px 28px 19px 28px;
+  height: 62px;
+  border: 1px solid rgb(172, 144, 122);
+  border-radius: 100px;
+  font-size: 16px;
+  transition: var(--transition);
+  margin-bottom: 10px;
+}
+
+
+.field__input:hover {
+  border: 1px solid rgb(255, 165, 92);
+}
+
+.field__input:focus {
+  padding: 26px 28px 12px 28px;
+}
+
+/*Тут с помощью селектора + обращаемся недопсредственно к спану. Т.е при фокусе на инпут, будет меняться следующий элемент(span)*/
+
+.field__input:focus+span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.field__input::placeholder {
+  color: #AC907A;
+  transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+  color: var(--accent-color);
+}
